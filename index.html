@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiber + Metabolic Probiotic — Flat Tummy &amp; Craving Support Duo · Creator Brief</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E6B4F'/%3E%3Cpath d='M14 42c2-15 13-25 34-25 0 19-12 29-25 29-4 0-9-1-9-4z' fill='%23E8EFE7'/%3E%3Cpath d='M14 42c7-2 13-8 18-15' stroke='%23E19A3B' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
+<style>
+  :root{
+    --bg:#F4F7F2;
+    --surface:#FFFFFF;
+    --ink:#1B2A20;
+    --ink-2:#4E5F52;
+    --green:#2E6B4F;
+    --green-2:#1F4F38;
+    --pine:#12291D;
+    --amber:#E19A3B;
+    --amber-2:#C87F1D;
+    --mint:#E8EFE7;
+    --line:#DCE6DA;
+    --font-body:"Manrope","PingFang SC","Hiragino Sans GB","Segoe UI",system-ui,sans-serif;
+    --font-display:"Newsreader","Iowan Old Style","Songti SC",Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  section[id]{scroll-margin-top:72px}
+  .container{width:min(100% - 2.5rem,1080px);margin-inline:auto}
+  h1,h2,h3{font-family:var(--font-display);font-weight:500;line-height:1.15;margin:0;letter-spacing:.01em}
+  p{margin:0}
+  a{color:var(--green-2)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--amber-2);outline-offset:2px;border-radius:4px}
+  ::selection{background:#DCEBD3}
+
+  /* ===== Header ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(244,247,242,.94);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(10px);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    min-height:60px;
+  }
+  .wordmark{display:flex;align-items:center;gap:.55rem;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem}
+  .wordmark em{font-style:normal;color:var(--green)}
+  .wordmark .wm-sub{display:block;font-weight:500;font-size:.68rem;color:var(--ink-2);letter-spacing:.04em}
+  .nav{display:flex;align-items:center;gap:1.1rem;list-style:none;margin:0;padding:0}
+  .nav a{text-decoration:none;color:var(--ink-2);font-size:.85rem;font-weight:600}
+  .nav a:hover{color:var(--green)}
+  @media (max-width:639px){.nav a{font-size:.78rem}.nav{gap:.7rem}}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#E4EDE1 0%,var(--bg) 92%);
+    padding:clamp(2.6rem,7vw,4.6rem) 0 clamp(2.4rem,6vw,4rem);
+  }
+  .hero-deco{position:absolute;inset:0;pointer-events:none}
+  .hero-deco::before{
+    content:"";position:absolute;top:-60px;right:-70px;width:300px;height:300px;opacity:.5;
+    background:
+      radial-gradient(circle 118px at 150px 150px,#D8E4D2 0 115px,transparent 116px),
+      radial-gradient(circle 86px at 150px 150px,#E4ECD9 0 83px,transparent 84px),
+      radial-gradient(circle 54px at 150px 150px,#F2EFDF 0 52px,transparent 53px);
+  }
+  .hero-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.8rem;font-weight:700;color:var(--green);
+    margin-bottom:1rem;
+  }
+  .hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block}
+  .hero h1{font-size:clamp(2.5rem,8vw,4.2rem);font-weight:500;max-width:15ch}
+  .hero h1 .plus{color:var(--amber-2);font-style:normal}
+  .hero-sub{
+    margin-top:1.1rem;max-width:44rem;
+    font-size:clamp(1.02rem,2.6vw,1.22rem);color:var(--ink-2);
+  }
+  .hero-badges{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+  .badge{
+    display:inline-flex;align-items:center;gap:.45rem;
+    padding:.45rem .9rem;border-radius:999px;
+    font-size:.84rem;font-weight:700;
+  }
+  .badge-offer{background:var(--pine);color:#F6E7CF}
+  .badge-tote{background:var(--amber);color:#24301F}
+  .badge svg{width:15px;height:15px}
+
+  /* Routine strip */
+  .routine{
+    margin-top:clamp(2.2rem,5vw,3.2rem);
+    display:grid;gap:1rem;
+  }
+  @media (min-width:768px){.routine{grid-template-columns:1fr 1fr}}
+  .routine-title{font-family:var(--font-display);font-size:clamp(1.4rem,3.6vw,1.9rem);font-style:italic;margin:0 0 1.2rem}
+  .routine-wrap{display:grid;gap:1rem}
+  .step-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    padding:1.15rem 1.3rem;display:flex;gap:1rem;align-items:flex-start;
+  }
+  .step-num{
+    flex:0 0 auto;width:34px;height:34px;border-radius:50%;
+    background:var(--mint);color:var(--green-2);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-display);font-weight:600;font-size:1.05rem;
+  }
+  .step-card h3{margin:0;font-size:1.12rem;font-weight:600;font-family:var(--font-body)}
+  .step-card p{margin:.25rem 0 0;font-size:.88rem;color:var(--ink-2)}
+
+  /* ===== Sections ===== */
+  .section{padding:clamp(2.8rem,7vw,4.6rem) 0}
+  .sec-head{max-width:46rem;margin-bottom:2.2rem}
+  .sec-kicker{font-size:.78rem;font-weight:700;color:var(--amber-2);letter-spacing:.05em;margin-bottom:.6rem}
+  .sec-head h2{font-size:clamp(1.8rem,5vw,2.7rem)}
+  .sec-head .lead{margin-top:.8rem;color:var(--ink-2);font-size:1.02rem}
+
+  /* Messaging */
+  .msg-grid{display:grid;gap:1.1rem}
+  @media (min-width:900px){.msg-grid{grid-template-columns:repeat(3,1fr)}}
+  .msg-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    padding:1.5rem 1.4rem;display:flex;flex-direction:column;gap:.7rem;
+  }
+  .msg-ico{
+    width:42px;height:42px;border-radius:12px;
+    background:var(--mint);color:var(--green);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .msg-ico svg{width:22px;height:22px}
+  .msg-card h3{font-size:1.18rem;font-weight:600;font-family:var(--font-body);margin:0}
+  .msg-card p{margin:0;color:var(--ink-2);font-size:.95rem}
+
+  /* Products */
+  .products{background:var(--surface);border-block:1px solid var(--line)}
+  .prod-grid{display:grid;gap:1.4rem}
+  @media (min-width:768px){.prod-grid{grid-template-columns:1fr 1fr}}
+  .prod-card{
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    background:var(--bg);display:flex;flex-direction:column;
+  }
+  .prod-art{
+    height:190px;background:linear-gradient(160deg,#E2ECDE,#F3EFE0);
+    display:flex;align-items:center;justify-content:center;color:var(--green-2);
+  }
+  .prod-art svg{width:150px;height:150px}
+  .prod-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
+  .prod-tag{font-size:.72rem;font-weight:700;color:var(--amber-2);letter-spacing:.06em}
+  .prod-body h3{margin:0;font-size:1.35rem;font-weight:600;font-family:var(--font-body)}
+  .prod-body .desc{margin:0;color:var(--ink-2);font-size:.95rem}
+  .role-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+  .role-list li{
+    font-size:.8rem;font-weight:600;color:var(--green-2);
+    background:var(--mint);border-radius:999px;padding:.3rem .75rem;
+  }
+  .how{
+    margin-top:auto;display:flex;gap:.55rem;align-items:flex-start;
+    font-size:.88rem;color:var(--ink-2);
+    border-top:1px solid var(--line);padding-top:.9rem;
+  }
+  .how svg{flex:0 0 auto;width:17px;height:17px;color:var(--green);margin-top:2px}
+
+  /* Offer band */
+  .offer{background:var(--pine);color:#EDF3EC}
+  .offer-inner{display:grid;gap:2rem;align-items:center}
+  @media (min-width:768px){.offer-inner{grid-template-columns:1.2fr .8fr}}
+  .offer-kicker{font-size:.8rem;font-weight:700;color:var(--amber);letter-spacing:.05em;margin-bottom:.6rem}
+  .offer h2{font-size:clamp(2.4rem,7vw,3.8rem);color:#F6E7CF}
+  .offer h2 em{font-style:italic;color:var(--amber)}
+  .offer .o-line{margin-top:1rem;font-size:1.02rem;color:#C4D3C6;max-width:34rem}
+  .offer-chip{
+    display:inline-flex;align-items:center;gap:.55rem;
+    margin-top:1.4rem;background:#F6E7CF;color:var(--pine);
+    border-radius:999px;padding:.6rem 1.1rem;font-weight:700;font-size:.9rem;
+  }
+  .offer-chip svg{width:19px;height:19px}
+  .offer-tote{
+    display:flex;align-items:center;justify-content:center;
+    color:#F6E7CF;opacity:.92;
+  }
+  .offer-tote svg{width:min(210px,60vw);height:auto}
+
+  /* Flows */
+  .flow-block{
+    background:var(--surface);border:1px solid var(--line);border-radius:20px;
+    padding:clamp(1.4rem,4vw,2.2rem);margin-bottom:1.6rem;
+  }
+  .flow-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:baseline;justify-content:space-between}
+  .flow-no{
+    font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:var(--amber-2);
+  }
+  .flow-head h3{font-size:clamp(1.4rem,4vw,1.9rem);margin:.2rem 0 0}
+  .flow-approach{margin-top:.5rem;color:var(--ink-2);font-size:.97rem;max-width:44rem}
+  .structure{
+    margin:1.4rem 0 1.6rem;padding:1.1rem 1.2rem;border-radius:14px;background:var(--mint);
+  }
+  .structure-label{font-size:.72rem;font-weight:700;color:var(--green-2);letter-spacing:.06em;margin-bottom:.7rem}
+  .structure-strip{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem}
+  .chip{
+    font-size:.78rem;font-weight:600;color:var(--green-2);
+    background:var(--surface);border:1px solid #CBDAC9;border-radius:999px;
+    padding:.28rem .7rem;white-space:nowrap;
+  }
+  .chip-arrow{color:var(--amber-2);font-weight:700;font-size:.8rem}
+  .flow-steps{list-style:none;margin:0;padding:0;counter-reset:step}
+  .flow-steps li{
+    counter-increment:step;
+    position:relative;padding:0 0 1.15rem 2.6rem;color:var(--ink-2);font-size:.97rem;
+  }
+  .flow-steps li::before{
+    content:counter(step);
+    position:absolute;left:0;top:.05rem;
+    width:26px;height:26px;border-radius:50%;
+    background:var(--bg);border:1px solid var(--line);
+    color:var(--green-2);font-weight:700;font-size:.8rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .flow-steps strong{color:var(--ink);font-weight:700}
+  .say{
+    display:block;margin-top:.4rem;
+    font-family:var(--font-display);font-style:italic;font-size:1.02rem;color:var(--green-2);
+  }
+  .seasonal{
+    display:flex;gap:.8rem;align-items:flex-start;
+    background:#FBF2E1;border:1px solid #EFDFBE;border-radius:14px;
+    padding:1rem 1.15rem;margin:1.1rem 0;
+    font-size:.92rem;color:#6B5418;
+  }
+  .seasonal svg{flex:0 0 auto;width:20px;height:20px;color:var(--amber-2);margin-top:3px}
+  .flow-foot{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+  .refs{display:flex;flex-wrap:wrap;gap:.6rem}
+  .ref-link{
+    display:inline-flex;align-items:center;gap:.45rem;
+    font-size:.82rem;font-weight:700;color:var(--green-2);
+    text-decoration:none;border:1px solid var(--line);border-radius:999px;
+    padding:.42rem .85rem;background:var(--bg);
+  }
+  .ref-link:hover{border-color:var(--green);background:var(--mint)}
+  .ref-link svg{width:15px;height:15px}
+  .copy-btn{
+    display:inline-flex;align-items:center;gap:.45rem;
+    font-family:var(--font-body);font-size:.84rem;font-weight:700;
+    color:#fff;background:var(--green);border:none;border-radius:999px;
+    padding:.55rem 1.05rem;cursor:pointer;
+  }
+  .copy-btn:hover{background:var(--green-2)}
+  .copy-btn svg{width:15px;height:15px}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:2.2rem 0 2.6rem;color:var(--ink-2);font-size:.88rem}
+  .footer-inner{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+  .footer-tag{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--ink)}
+  .to-top{color:var(--green-2);text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:.35rem}
+  .to-top svg{width:14px;height:14px}
+
+  /* Toast */
+  .toast{
+    position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(14px);
+    background:var(--pine);color:#F6E7CF;font-size:.88rem;font-weight:600;
+    padding:.65rem 1.1rem;border-radius:999px;opacity:0;pointer-events:none;
+    transition:opacity .25s,transform .25s;z-index:100;
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* Hero entrance */
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .hero-inner>*{animation:rise .7s ease both}
+  .hero-inner>*:nth-child(2){animation-delay:.08s}
+  .hero-inner>*:nth-child(3){animation-delay:.16s}
+  .hero-inner>*:nth-child(4){animation-delay:.24s}
+  @media (prefers-reduced-motion:reduce){.hero-inner>*{animation:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="container header-inner">
+    <a class="wordmark" href="#top">
+      <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 42c2-15 13-25 34-25 0 19-12 29-25 29-4 0-9-1-9-4z" fill="#2E6B4F"/><path d="M14 42c7-2 13-8 18-15" stroke="#E19A3B" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+      <span>Fiber <em>+</em> Metabolic<span class="wm-sub">Creator Brief · Black Friday</span></span>
+    </a>
+    <ul class="nav">
+      <li><a href="#messaging">Messaging</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#flows">Flows</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="hero-deco" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="hero-kicker"><span class="dot"></span>Black Friday 2026 · Creator Content Brief</p>
+    <h1>Fiber <span class="plus">+</span> Metabolic Probiotic</h1>
+    <p class="hero-sub">Flat Tummy &amp; Craving Support Duo — a simple two-step routine to support a less-bloated feeling, regularity, and appetite management.</p>
+    <div class="hero-badges">
+      <span class="badge badge-offer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20.6 13.4 12 22 1.4 11.4V2.6A1.2 1.2 0 0 1 2.6 1.4h8.8L20.6 11a1.5 1.5 0 0 1 0 2.4z"/><circle cx="6.4" cy="6.4" r="1.8" fill="currentColor" stroke="none"/></svg>
+        Up to 66% OFF
+      </span>
+      <span class="badge badge-tote">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.6 12.2a1.6 1.6 0 0 1-1.6 1.4H7.2a1.6 1.6 0 0 1-1.6-1.4L4 8z"/><path d="M8.4 8V6.6a3.6 3.6 0 0 1 7.2 0V8"/></svg>
+        Free tote bag · first 200 orders
+      </span>
+    </div>
+
+    <h2 class="routine-title">One simple daily duo</h2>
+    <div class="routine-wrap">
+      <div class="step-card">
+        <span class="step-num">1</span>
+        <div>
+          <h3>Daily Fiber Mix</h3>
+          <p>An unflavored daily fiber powder that helps ease bloating, supports regular bowel movements, and promotes gut health. Mix it into water, coffee, matcha, or smoothies.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <span class="step-num">2</span>
+        <div>
+          <h3>Metabolic Probiotic</h3>
+          <p>A once-daily probiotic formulated to support appetite, cravings, and metabolic wellness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Messaging ===== -->
+<section class="section" id="messaging">
+  <div class="container">
+    <div class="sec-head">
+      <p class="sec-kicker">Key messaging</p>
+      <h2>The story in three lines</h2>
+      <p class="lead">Three pillars to weave through your video — whatever structure you choose.</p>
+    </div>
+    <div class="msg-grid">
+      <div class="msg-card">
+        <span class="msg-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c1-8 6-12.5 18-12.5C21 13.5 15.5 18.5 9 18.5c-2.4 0-4.6-.8-6-3.5z"/><path d="M3 15c3.4-1.4 6-5 8-8"/></svg>
+        </span>
+        <h3>Less bloating, more regularity</h3>
+        <p>Daily Fiber Mix supports regular bowel movements and gut health, helping you feel less backed up and bloated.</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="8" width="19" height="8" rx="4"/><path d="M12.5 8v8" stroke-dasharray="2 2"/></svg>
+        </span>
+        <h3>Support for appetite &amp; cravings</h3>
+        <p>Metabolic Probiotic supports appetite control, craving management, and metabolic wellness.</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="12" r="3"/><path d="M9 12h6"/></svg>
+        </span>
+        <h3>One simple daily duo</h3>
+        <p>Support regularity and appetite management in an easy everyday routine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Products ===== -->
+<section class="section products" id="products">
+  <div class="container">
+    <div class="sec-head">
+      <p class="sec-kicker">Product roles</p>
+      <h2>What's in the duo</h2>
+      <p class="lead">Each product plays one clear role — say it the same way in every video.</p>
+    </div>
+    <div class="prod-grid">
+      <article class="prod-card">
+        <div class="prod-art" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <path d="M96 34c-1 14-9 23-24 23 0-14 8-23 24-23z" fill="#2E6B4F" opacity=".16"/>
+            <path d="M96 34c-5 1-9 4-12 8" stroke="#2E6B4F" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+            <rect x="44" y="16" width="32" height="10" rx="4" fill="#E19A3B"/>
+            <rect x="32" y="26" width="56" height="70" rx="12" fill="#FDFDFB" stroke="#C8D6C4" stroke-width="2"/>
+            <path d="M38 46h44v44a6 6 0 0 1-6 6H44a6 6 0 0 1-6-6V46z" fill="#E8EFE7"/>
+            <path d="M42 74c4-3 8-3 12 0s8 3 12 0 8-3 12 0v-6c-4 3-8 3-12 0s-8-3-12 0-8 3-12 0v6z" fill="#FDFDFB"/>
+            <path d="M42 60c4-3 8-3 12 0s8 3 12 0 8-3 12 0v-6c-4 3-8 3-12 0s-8-3-12 0-8 3-12 0v6z" fill="#FDFDFB"/>
+            <path d="M76 96v6a4 4 0 0 1-4 4h-4" stroke="#C8D6C4" stroke-width="2" stroke-linecap="round"/>
+            <path d="M70 34c1-5 5-7 10-6" stroke="#2E6B4F" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="prod-body">
+          <p class="prod-tag">Step 1</p>
+          <h3>Daily Fiber Mix</h3>
+          <p class="desc">An unflavored daily fiber powder — the base of a less-bloated, more regular routine.</p>
+          <ul class="role-list">
+            <li>Eases bloating</li>
+            <li>Supports regular bowel movements</li>
+            <li>Promotes gut health</li>
+          </ul>
+          <p class="how">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5 5 5-5"/><path d="M4 17v3h16v-3"/></svg>
+            Mix into water, coffee, matcha, or smoothies — a drink you already enjoy.
+          </p>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-art" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <g transform="rotate(-28 60 60)">
+              <rect x="30" y="46" width="60" height="28" rx="14" fill="#E8EFE7"/>
+              <rect x="30" y="46" width="30" height="28" rx="14" fill="#2E6B4F"/>
+              <rect x="56" y="46" width="34" height="28" rx="14" fill="#E19A3B"/>
+              <path d="M58 46h4v28h-4z" fill="#FDFDFB"/>
+            </g>
+            <path d="M88 26l1.8 4.7L94.5 32.5l-4.7 1.8L88 39l-1.8-4.7-4.7-1.8 4.7-1.8L88 26z" fill="#2E6B4F"/>
+            <path d="M30 22l1.3 3.4-3.4 1.3 3.4 1.3 1.3 3.4 1.3-3.4 3.4-1.3-3.4-1.3L30 22z" fill="#E19A3B"/>
+          </svg>
+        </div>
+        <div class="prod-body">
+          <p class="prod-tag">Step 2</p>
+          <h3>Metabolic Probiotic</h3>
+          <p class="desc">A once-daily probiotic — the appetite and craving companion to your routine.</p>
+          <ul class="role-list">
+            <li>Supports appetite</li>
+            <li>Supports cravings</li>
+            <li>Supports metabolic wellness</li>
+          </ul>
+          <p class="how">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5 5 5-5"/><path d="M4 17v3h16v-3"/></svg>
+            Take once daily, as directed — make it part of your everyday routine.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Offer ===== -->
+<section class="section offer" id="offer">
+  <div class="container offer-inner">
+    <div>
+      <p class="offer-kicker">Black Friday offer</p>
+      <h2>Up to <em>66% OFF</em></h2>
+      <p class="o-line">Limited offer — the first 200 orders receive a free tote bag with the duo. Mention both in your video, and keep the deadline front of mind.</p>
+      <span class="offer-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.6 12.2a1.6 1.6 0 0 1-1.6 1.4H7.2a1.6 1.6 0 0 1-1.6-1.4L4 8z"/><path d="M8.4 8V6.6a3.6 3.6 0 0 1 7.2 0V8"/></svg>
+        First 200 orders get a free tote bag
+      </span>
+    </div>
+    <div class="offer-tote" aria-hidden="true">
+      <svg viewBox="0 0 160 130" fill="none">
+        <path d="M46 44h68l-6 72a8 8 0 0 1-8 7.2H60a8 8 0 0 1-8-7.2l-6-72z" fill="#F6E7CF" opacity=".95"/>
+        <path d="M52 52h56l-4.6 58a6 6 0 0 1-6 5.4H62.6a6 6 0 0 1-6-5.4L52 52z" fill="#12291D"/>
+        <path d="M56 42v-8a24 24 0 0 1 48 0v8" stroke="#F6E7CF" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <path d="M58 76c9-5 16-5 22 0" stroke="#E19A3B" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M58 90c9-5 16-5 22 0" stroke="#E19A3B" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Flows ===== -->
+<section class="section" id="flows">
+  <div class="container">
+    <div class="sec-head">
+      <p class="sec-kicker">Suggested content flows</p>
+      <h2>Three ways to structure your video</h2>
+      <p class="lead">Pick the opening that fits your style — every flow ends with the same offer and shopping CTA.</p>
+    </div>
+
+    <!-- Flow 1 -->
+    <article class="flow-block" id="flow-visual">
+      <div class="flow-head">
+        <div>
+          <p class="flow-no">01</p>
+          <h3>Visual Results First</h3>
+        </div>
+      </div>
+      <p class="flow-approach">Open with the outcome — the flat-tummy visual does the talking before you say a word.</p>
+
+      <div class="structure" aria-label="Video structure">
+        <p class="structure-label">Structure</p>
+        <div class="structure-strip">
+          <span class="chip">Flat-tummy visual</span><span class="chip-arrow">→</span>
+          <span class="chip">Bloating / irregularity / cravings</span><span class="chip-arrow">→</span>
+          <span class="chip">Bundle intro</span><span class="chip-arrow">→</span>
+          <span class="chip">Product roles</span><span class="chip-arrow">→</span>
+          <span class="chip">Daily routine</span><span class="chip-arrow">→</span>
+          <span class="chip">Offer + CTA</span>
+        </div>
+      </div>
+
+      <ol class="flow-steps">
+        <li>Open with a <strong>flat-tummy visual</strong>, waistband shot, or genuine before-and-after bloating comparison.</li>
+        <li><strong>Make it seasonal:</strong> build your content around Thanksgiving dinners, Christmas parties, or holiday treats. Share your experience with bloating, irregular bathroom habits, or extra snacking during the holiday season.</li>
+        <li><strong>Introduce the bundle</strong> — a simple routine that supports regularity and appetite management.<span class="say">“My daily duo for a less-bloated belly and support with appetite and weight-management goals.”</span></li>
+        <li><strong>Explain each role:</strong> Daily Fiber Mix helps ease bloating, supports regular bowel movements, and promotes gut health — helping you feel less backed up for a flatter-looking tummy. Metabolic Probiotic supports appetite control and craving management to help you manage food intake and support your midsection weight-management goals.</li>
+        <li><strong>Show your routine:</strong> mix Fiber into a drink you already enjoy and take Metabolic as directed.</li>
+        <li><strong>Close</strong> with the bundle discount, the limited free tote bag offer, and your shopping CTA.</li>
+      </ol>
+
+      <div class="seasonal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3.5M12 3 9.8 5.8M12 3l2.2 2.8M7 7h10M8 7v4a4 4 0 0 0 8 0V7M12 15v4a2 2 0 0 0 2 2"/></svg>
+        <span><strong>Seasonal angle:</strong> pair the visual with a holiday moment — Thanksgiving dinner, Christmas party, or holiday treats — to make the bloating story feel timely.</span>
+      </div>
+
+      <div class="flow-foot">
+        <div class="refs">
+          <a class="ref-link" href="https://www.tiktok.com/@brookezurcher/video/7630695553407520030" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+            Reference · Brooke Zurcher
+          </a>
+          <a class="ref-link" href="https://www.tiktok.com/@brookezurcher/video/7629526632776092958" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+            Reference · Brooke Zurcher
+          </a>
+        </div>
+        <button class="copy-btn" type="button" data-flow="visual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          Copy flow script
+        </button>
+      </div>
+    </article>
+
+    <!-- Flow 2 -->
+    <article class="flow-block" id="flow-pain">
+      <div class="flow-head">
+        <div>
+          <p class="flow-no">02</p>
+          <h3>Pain Point First</h3>
+        </div>
+      </div>
+      <p class="flow-approach">Start with the feeling everyone recognizes — bloated, backed up, puffy — then offer the duo as the fix.</p>
+
+      <div class="structure" aria-label="Video structure">
+        <p class="structure-label">Structure</p>
+        <div class="structure-strip">
+          <span class="chip">Pain point</span><span class="chip-arrow">→</span>
+          <span class="chip">Bundle intro</span><span class="chip-arrow">→</span>
+          <span class="chip">Product roles</span><span class="chip-arrow">→</span>
+          <span class="chip">Daily routine</span><span class="chip-arrow">→</span>
+          <span class="chip">Offer + CTA</span>
+        </div>
+      </div>
+
+      <ol class="flow-steps">
+        <li>Open with a <strong>relatable pain point</strong>: bloating, feeling backed up, or puffiness.<span class="say">“Feeling backed up and bloated after all those holiday meals?”</span></li>
+        <li><strong>Introduce the bundle</strong> as a simple routine that supports regularity and appetite management.</li>
+        <li><strong>Explain each product’s role:</strong> Daily Fiber Mix supports regular bowel movements to help ease that backed-up, bloated feeling while promoting gut health. Metabolic Probiotic supports appetite control, cravings, and weight-management goals — including concerns around the midsection.</li>
+        <li><strong>Demonstrate your routine:</strong> mix Fiber into your drink, take Metabolic as part of your day.</li>
+        <li><strong>Share</strong> the bundle discount, the limited free tote bag offer, and your CTA.</li>
+      </ol>
+
+      <div class="seasonal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3.5M12 3 9.8 5.8M12 3l2.2 2.8M7 7h10M8 7v4a4 4 0 0 0 8 0V7M12 15v4a2 2 0 0 0 2 2"/></svg>
+        <span><strong>Seasonal angle:</strong> tie the problem to Thanksgiving dinners, Christmas parties, or changes in your holiday routine — then let the duo be the reset.</span>
+      </div>
+
+      <div class="flow-foot">
+        <div class="refs">
+          <a class="ref-link" href="https://www.tiktok.com/@ttsshopfinds/video/7537819850115271950" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+            Reference · TTS Shop Finds
+          </a>
+          <a class="ref-link" href="https://www.tiktok.com/@theavenuerose/video/7642019644408139038" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+            Reference · The Avenue Rose
+          </a>
+        </div>
+        <button class="copy-btn" type="button" data-flow="pain">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          Copy flow script
+        </button>
+      </div>
+    </article>
+
+    <!-- Flow 3 -->
+    <article class="flow-block" id="flow-offer">
+      <div class="flow-head">
+        <div>
+          <p class="flow-no">03</p>
+          <h3>Offer First</h3>
+        </div>
+      </div>
+      <p class="flow-approach">Lead with the deal, connect to the problem, and close with a gift-ready CTA.</p>
+
+      <div class="structure" aria-label="Video structure">
+        <p class="structure-label">Structure</p>
+        <div class="structure-strip">
+          <span class="chip">Black Friday offer</span><span class="chip-arrow">→</span>
+          <span class="chip">Bloating / irregularity / cravings</span><span class="chip-arrow">→</span>
+          <span class="chip">Bundle intro</span><span class="chip-arrow">→</span>
+          <span class="chip">Product roles</span><span class="chip-arrow">→</span>
+          <span class="chip">Daily routine</span><span class="chip-arrow">→</span>
+          <span class="chip">CTA</span>
+        </div>
+      </div>
+
+      <ol class="flow-steps">
+        <li><strong>Lead with the Black Friday discount</strong> and the limited free tote bag offer.</li>
+        <li><strong>Connect to a relatable problem.</strong><span class="say">“Feeling backed up and bloated — and constantly reaching for snacks?”</span></li>
+        <li><strong>Try a holiday gifting angle:</strong> if a friend or family member has shared these concerns — or already loves gut-health products — position the bundle as a thoughtful gift.<span class="say">“Have someone on your holiday list who would love an upgrade to their daily wellness routine?”</span></li>
+        <li><strong>Introduce the duo:</strong> Daily Fiber Mix helps ease bloating, supports regular bowel movements, and promotes gut health. Metabolic Probiotic supports appetite control, craving management, and weight-management goals.</li>
+        <li><strong>Show yourself</strong> mixing Fiber into your favorite drink and incorporating Metabolic into your daily routine.</li>
+        <li><strong>Finish with a CTA.</strong><span class="say">“Shop the holiday offer for your own routine — or gift it to someone who’s been wanting to try it.”</span></li>
+      </ol>
+
+      <div class="seasonal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8M2 8h20l-1.3-4a1.6 1.6 0 0 0-1.5-1H4.8A1.6 1.6 0 0 0 3.3 4L2 8z"/><path d="M8 12v2M12 12v2M16 12v2"/></svg>
+        <span><strong>Gifting angle:</strong> the bundle doubles as a holiday gift — point it at someone on their list who loves gut-health products.</span>
+      </div>
+
+      <div class="flow-foot">
+        <div class="refs">
+          <a class="ref-link" href="https://www.tiktok.com/@nicollmontoya.creator/video/7692365695807409439" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+            Reference · Nicoll Montoya
+          </a>
+        </div>
+        <button class="copy-btn" type="button" data-flow="offer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          Copy flow script
+        </button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-tag">Fiber + Metabolic Probiotic — Flat Tummy &amp; Craving Support Duo</p>
+    <p>One simple daily duo, all holiday season long. · <a class="to-top" href="#top">Back to top
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V4"/><path d="m5 11 7-7 7 7"/></svg>
+    </a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2000);
+  }
+
+  function copyToClipboard(text){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(text).then(function(){ return true; });
+    }
+    return new Promise(function(resolve){
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try{ resolve(document.execCommand('copy')); }
+      catch(e){ resolve(false); }
+      document.body.removeChild(ta);
+    });
+  }
+
+  var FLOW_SCRIPTS = {
+    visual: [
+      'FLOW 01 — VISUAL RESULTS FIRST',
+      '1. Open with a flat-tummy visual, waistband shot, or genuine before-and-after bloating comparison.',
+      '2. Make it seasonal: build your content around Thanksgiving dinners, Christmas parties, or holiday treats. Share your experience with bloating, irregular bathroom habits, or extra snacking during the holiday season.',
+      '3. Introduce the bundle — a simple routine that supports regularity and appetite management.',
+      '   Say: "My daily duo for a less-bloated belly and support with appetite and weight-management goals."',
+      '4. Explain each role: Daily Fiber Mix helps ease bloating, supports regular bowel movements, and promotes gut health — helping you feel less backed up for a flatter-looking tummy. Metabolic Probiotic supports appetite control and craving management to help you manage food intake and support your midsection weight-management goals.',
+      '5. Show your routine: mix Fiber into a drink you already enjoy and take Metabolic as directed.',
+      '6. Close with the bundle discount, the limited free tote bag offer, and your shopping CTA.'
+    ].join('\n'),
+
+    pain: [
+      'FLOW 02 — PAIN POINT FIRST',
+      '1. Open with a relatable pain point: bloating, feeling backed up, or puffiness.',
+      '   Say: "Feeling backed up and bloated after all those holiday meals?"',
+      '2. Introduce the bundle as a simple routine that supports regularity and appetite management.',
+      '3. Explain each product\'s role: Daily Fiber Mix supports regular bowel movements to help ease that backed-up, bloated feeling while promoting gut health. Metabolic Probiotic supports appetite control, cravings, and weight-management goals — including concerns around the midsection.',
+      '4. Demonstrate your routine: mix Fiber into your drink, take Metabolic as part of your day.',
+      '5. Share the bundle discount, the limited free tote bag offer, and your CTA.'
+    ].join('\n'),
+
+    offer: [
+      'FLOW 03 — OFFER FIRST',
+      '1. Lead with the Black Friday discount and the limited free tote bag offer.',
+      '2. Connect to a relatable problem.',
+      '   Say: "Feeling backed up and bloated — and constantly reaching for snacks?"',
+      '3. Try a holiday gifting angle: if a friend or family member has shared these concerns — or already loves gut-health products — position the bundle as a thoughtful gift.',
+      '   Say: "Have someone on your holiday list who would love an upgrade to their daily wellness routine?"',
+      '4. Introduce the duo: Daily Fiber Mix helps ease bloating, supports regular bowel movements, and promotes gut health. Metabolic Probiotic supports appetite control, craving management, and weight-management goals.',
+      '5. Show yourself mixing Fiber into your favorite drink and incorporating Metabolic into your daily routine.',
+      '6. Finish with a CTA.',
+      '   Say: "Shop the holiday offer for your own routine — or gift it to someone who\'s been wanting to try it."'
+    ].join('\n')
+  };
+
+  var btns = document.querySelectorAll('.copy-btn');
+  Array.prototype.forEach.call(btns, function(btn){
+    btn.addEventListener('click', function(){
+      var text = FLOW_SCRIPTS[btn.getAttribute('data-flow')] || '';
+      copyToClipboard(text).then(function(ok){
+        showToast(ok ? 'Flow script copied' : 'Copy failed — select the text manually');
+      });
+    });
+  });
+
+  var header = document.querySelector('header');
+  window.addEventListener('scroll', function(){
+    header.style.borderBottomColor = window.scrollY > 6 ? 'var(--line)' : 'transparent';
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
