@@ -293,6 +293,19 @@
     background:var(--pine);color:#F6E7CF;border-radius:999px;padding:.5rem 1rem;font-size:.82rem;font-weight:700;
   }
   .video-fallback .pf-watch svg{width:14px;height:14px}
+  .video-actions{display:flex;flex-wrap:wrap;gap:.5rem;padding:.6rem .8rem;border-top:1px solid var(--line)}
+  .video-actions a{
+    flex:1 1 auto;min-width:120px;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;
+    border-radius:999px;padding:.5rem .85rem;font-size:.8rem;font-weight:700;text-decoration:none;line-height:1.2;
+  }
+  .video-actions svg{width:14px;height:14px;flex:0 0 auto}
+  .btn-mp4{background:var(--green);color:#fff}
+  .btn-mp4:hover{background:var(--green-2)}
+  .btn-tiktok{background:transparent;color:var(--green-2);border:1px solid var(--line)}
+  .btn-tiktok:hover{border-color:var(--green)}
+  @media (max-width:480px){
+    .video-actions a{min-width:calc(50% - .25rem)}
+  }
   .copy-btn{
     display:inline-flex;align-items:center;gap:.45rem;
     font-family:var(--font-body);font-size:.84rem;font-weight:700;
@@ -555,10 +568,30 @@
           <figure class="video-card">
             <iframe src="https://www.tiktok.com/embed/v2/7630695553407520030" title="TikTok reference — Visual Results First, @brookezurcher" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen">></iframe>
             <figcaption>@brookezurcher · Visual Results First</figcaption>
+            <div class="video-actions">
+              <a class="btn-mp4" href="videos/7630695553407520030.mp4" download="brookezurcher-visual-1.mp4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+                Download MP4 · 6.9 MB
+              </a>
+              <a class="btn-tiktok" href="https://www.tiktok.com/@brookezurcher/video/7630695553407520030" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+                Watch on TikTok
+              </a>
+            </div>
           </figure>
           <figure class="video-card">
             <iframe src="https://www.tiktok.com/embed/v2/7629526632776092958" title="TikTok reference — Visual Results First, @brookezurcher" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen">></iframe>
             <figcaption>@brookezurcher · Visual Results First</figcaption>
+            <div class="video-actions">
+              <a class="btn-mp4" href="videos/7629526632776092958.mp4" download="brookezurcher-visual-2.mp4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+                Download MP4 · 1.3 MB
+              </a>
+              <a class="btn-tiktok" href="https://www.tiktok.com/@brookezurcher/video/7629526632776092958" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+                Watch on TikTok
+              </a>
+            </div>
           </figure>
         </div>
       </div>
@@ -621,6 +654,16 @@
           <figure class="video-card">
             <iframe src="https://www.tiktok.com/embed/v2/7537819850115271950" title="TikTok reference — Pain Point First, @ttsshopfinds" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen">></iframe>
             <figcaption>@ttsshopfinds · Pain Point First</figcaption>
+            <div class="video-actions">
+              <a class="btn-mp4" href="videos/7537819850115271950.mp4" download="ttsshopfinds-pain.mp4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+                Download MP4 · 0.7 MB
+              </a>
+              <a class="btn-tiktok" href="https://www.tiktok.com/@ttsshopfinds/video/7537819850115271950" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+                Watch on TikTok
+              </a>
+            </div>
           </figure>
           <a class="video-fallback" href="https://www.tiktok.com/@theavenuerose/video/7642019644408139038" target="_blank" rel="noopener">
             <span class="pf-play">
@@ -695,6 +738,16 @@
           <figure class="video-card">
             <iframe src="https://www.tiktok.com/embed/v2/7692365695807409439" title="TikTok reference — Offer First, @nicollmontoya.creator" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen">></iframe>
             <figcaption>@nicollmontoya.creator · Offer First</figcaption>
+            <div class="video-actions">
+              <a class="btn-mp4" href="videos/7692365695807409439.mp4" download="nicollmontoya-offer.mp4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+                Download MP4 · 8.2 MB
+              </a>
+              <a class="btn-tiktok" href="https://www.tiktok.com/@nicollmontoya.creator/video/7692365695807409439" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.1c-2.1 0-3.8-1.7-3.9-3.8V3h-3v10.4a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V7.7a6 6 0 1 0 4.9 5.9v-4.9a7 7 0 0 0 3.9 1.2v-2.8z"/></svg>
+                Watch on TikTok
+              </a>
+            </div>
           </figure>
         </div>
       </div>
